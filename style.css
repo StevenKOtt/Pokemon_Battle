@@ -1,0 +1,10 @@
+.sideBar {
+    background-color: chartreuse;
+    height: 1000px;
+    width: 250px;
+    padding-top: 10px;
+}
+#submit {
+    margin-top: 10px;
+}
+

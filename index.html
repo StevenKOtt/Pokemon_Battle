@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+      <script src="app.js" charset="utf-8" defer></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+
     <title>Document</title>
 </head>
 <body>
+    <h1> Pokemon Battle </h1>
+    <div class="sideBar">
+        <form>
+            <input type="text" placeholder="Pokemon Name"/>
+            <input type="submit" id="submit" value="Get Pokemon Info" />
+        </form>
+        <h2>Pokemon Information: </h2>
+        <div id="pokemonImage"></div>
+        <dl>
+            <dt>Name:</dt>
+            <dd id="pokeName">loading...</dd>
+            <dt>Type:</dt>
+            <dd id="pokeType">loading...</dd>
+            <dt>Attack: </dt>
+            <dd id="pokeAttack">loading...</dd>
+            <dt>Defense:</dt>
+            <dd id="pokeDefense">loading...</dd>
+            <dt>Special Attack:</dt>
+            <dd id="pokeSpecialAtt">loading...</dd>
+            <dt>Special Defense:</dt>
+            <dd id="pokeSpecialDef">loading...</dd>
+            <dt>Health:</dt>
+            <dd id="pokeSpecialDef">loading...</dd>
+        </dl>
+        <button type='button' id='confirm'>Confirm Choice</button>
+    </div>
+    <div id="battleField">
+        <div id="playerOne">
+
+        </div>
+        <div id="playerTwo">
+
+        </div>
+    </div>
     
+
+
+        </div>
+    </div>
 </body>
 </html>
