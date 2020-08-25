@@ -7,10 +7,11 @@
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
       <script src="app.js" charset="utf-8" defer></script>
       <link rel="stylesheet" type="text/css" href="style.css">
 
-    <title>Document</title>
+    <title>Pokemon Battle</title>
 </head>
 <body>
     <h1> Pokemon Battle </h1>
@@ -26,6 +27,8 @@
             <dd id="pokeName">loading...</dd>
             <dt>Type:</dt>
             <dd id="pokeType">loading...</dd>
+            <dt>Health:</dt>
+            <dd id="pokeHealth">loading...</dd>
             <dt>Attack: </dt>
             <dd id="pokeAttack">loading...</dd>
             <dt>Defense:</dt>
@@ -34,23 +37,48 @@
             <dd id="pokeSpecialAtt">loading...</dd>
             <dt>Special Defense:</dt>
             <dd id="pokeSpecialDef">loading...</dd>
-            <dt>Health:</dt>
-            <dd id="pokeSpecialDef">loading...</dd>
+            <dt>Speed:</dt>
+            <dd id="pokeSpeed">loading...</dd>
         </dl>
         <button type='button' id='confirm'>Confirm Choice</button>
+        <audio id='sendoutPokemon' src="sounds/pokeballpop.mp3" type="audio/mp3"></audio>
     </div>
+
+
     <div id="battleField">
-        <div id="playerOne">
-
+        <div id="player1">
+            <info>
+                <h2></h2>
+                <progress class="player1health" value="100" max="100"></progress>
+            </info>
+            <div id="pokeImage"></div>
         </div>
-        <div id="playerTwo">
-
+        <div id="player2">
+            <info>
+                <h2></h2>
+                <progress class="player2health" value="100" max="100"></progress>
+            </info>
+            <div id="pokeImage"></div>
+            <div id="attackMoves">
+                <div class= 'Attacks'>
+                    <ul id="player1Attacks">
+                        <li class="attack1">loading..</li>
+                        <li class="attack2">loading..</li>
+                        <li class="attack3">loading..</li>
+                        <li class="attack4">loading..</li>
+                    </ul>
+                    <div class= 'Attacks'>
+                        <ul id="player2Attacks">
+                            <li class="attack1">loading..</li>
+                            <li class="attack2">loading..</li>
+                            <li class="attack3">loading..</li>
+                            <li class="attack4">loading..</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    
 
-
-        </div>
-    </div>
 </body>
 </html>
