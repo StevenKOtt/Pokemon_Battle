@@ -8,6 +8,8 @@ body {
     width: 250px;
     padding-top: 10px;
     float: left;
+    padding-left: 10px;
+    
 }
 #submit {
     margin-top: 10px;
@@ -65,7 +67,7 @@ ul {
     background-image: url("image/pokeball.png");
     background-size: cover;
     background-position-y: -70px;
-    width:1250px;
+    width:1240px;
     float: left;
     font-size: 45px;
 }
