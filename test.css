@@ -1,15 +1,16 @@
 body {
     margin: 10px auto;
-    width: 1500px;
+    width: 100%;
+    height: 100%;
 }
 .sideBar {
     background-image: url("image/pokeborder.png");
     background-position: center;
-    background-size: 300px 1040px;
+    background-size: 115% 1050px;
     background-color: white;
     background-position-y: -40px;
-    height: 945px;
-    width: 250px;
+    height: 960px;
+    width: 16.6%;
     padding-top: 10px;
     float: left;
     padding-left: 10px;
@@ -27,12 +28,13 @@ body {
 }
 
 #battleField {
-    width: 1500px;
+    width: 100%;
     background-image: url("image/background.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 610px; 
+    display: block;
 
 }
 
@@ -58,7 +60,7 @@ ul {
 #player1 {
     float: left;
     margin-left: 60px;
-    margin-top: 50px;
+    margin-top: 100px;
     width: 300px;
     font-size: 30px;
     display: none;
@@ -67,21 +69,19 @@ ul {
 #player2 {
     float: right;
     margin-right: 60px;
-    margin-top: 50px;
+    margin-top: 100px;
     width: 300px;
     font-size: 30px;
     display: none;
 }
 
 #attackMoves {
-    height: 450px;
+    height: 70%;
     background-image: url("image/pokeball.png");
     background-size: cover;
     background-position-y: -55px;
-    width:1240px;
+    width:82.6%;
     float: left;
-    font-size: 17px;
-    margin-top: -20px;
     font-family: 'Press Start 2P', cursive;
 
 }
@@ -91,25 +91,23 @@ ul {
 #player1Attacks {
     float: left;
     margin-left: 100px;
-    border: 10px dotted black;
-    width: 300px;
+    border: 5px dotted black;
+    width: 24.2%;
     background-color: rgba(0, 0, 0, .2);
     line-height: 60px;
-    margin-top: 20px;
+    margin-top: 2%;
     padding-left: 3px;
-    display: none;
 }
 
 #player2Attacks {
     float: right;
-    width: 300px;
-    border: 10px dotted black;
+    width: 24.2%;
+    border: 5px dotted black;
     margin-right: 100px;
     background-color: rgba(0, 0, 0, .2);
     line-height: 60px;
-    margin-top: 20px;
+    margin-top: 2%;
     padding-right: 1px;
-    display: none;
 }
 
 #player1Attacks * {
@@ -118,6 +116,7 @@ ul {
     border: .5px solid black;
     padding: 1px 3px 1px 3px;
     border-radius: 5px;
+    width: 95%;
 
 }
 #player2Attacks * {
@@ -126,6 +125,7 @@ ul {
     border-radius: 5px;
     padding: 1px 3px 1px 3px;
     text-align: right;
+    width: 95%;
 }
 
 #player1Attacks *:hover {
@@ -137,13 +137,4 @@ ul {
     color: red;
     transition: color .5s;
     cursor: pointer;
-}
-progress::-webkit-progress-value {
-   transition : width 5s ease;
-   transition-delay: 1s;
-}
-
-#informationBar {
-    text-align: center;
-    padding-top: 20px;
 }

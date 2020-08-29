@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -16,11 +17,12 @@
 <body>
     <h1> Pokemon Battle </h1>
     <div class="sideBar">
+        <div id="info">
         <form>
-            <input type="text" placeholder="Pokemon Name"/>
+            <input type="text" placeholder="Pokemon Name/#"/>
             <input type="submit" id="submit" value="Get Pokemon Info" />
         </form>
-        <h2>Pokemon Information: </h2>
+        <h2 id="pokeHeaderInfo">Pokemon Information: </h2>
         <div id="pokemonImage"></div>
         <dl>
             <dt>Name:</dt>
@@ -52,20 +54,22 @@
         <button type='button' id='confirm'>Confirm Choice</button>
         <audio id='sendoutPokemon' src="sounds/pokeballpop.mp3" type="audio/mp3"></audio>
     </div>
+    </div>
 
 
     <div id="battleField">
+        <h1 id="informationBar">Please choose your pokemon of choice on the left hand side.</h1>
         <div id="player1">
             <info>
                 <h2></h2>
-                <progress class="player1health" value="100" max="100"></progress>
+                <progress></progress>
             </info>
             <div id="pokeImage"></div>
         </div>
         <div id="player2">
             <info>
                 <h2></h2>
-                <progress class="player2health" value="100" max="100"></progress>
+                <progress></progress>
             </info>
             <div id="pokeImage"></div>
         </div>
@@ -79,13 +83,13 @@
                         <li class="attack3">loading..</li>
                         <li class="attack4">loading..</li>
                     </ul>
-                        <ul id="player2Attacks">
-                            <li class="attack1">loading..</li>
-                            <li class="attack2">loading..</li>
-                            <li class="attack3">loading..</li>
-                            <li class="attack4">loading..</li>
-                        </ul>
-        </div>
+                    <ul id="player2Attacks">
+                        <li class="attack1">loading..</li>
+                        <li class="attack2">loading..</li>
+                        <li class="attack3">loading..</li>
+                        <li class="attack4">loading..</li>
+                    </ul>
+    </div>
 
 </body>
 </html>
