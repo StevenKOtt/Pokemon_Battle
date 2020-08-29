@@ -36,6 +36,7 @@ $.ajax({
             pendingPokemon.speed = data.stats[5].base_stat  * 2 + 5;
             $('dl').css('display','block')
             $('#confirm').css('display','block')
+            $('#playerchoices').css('display','block')
             pendingPokemon.attackMove =[];
             for(let i = 1; i <= 4; i++) {
                 let attack = {};
@@ -74,18 +75,19 @@ const pokeMoveInfo = (apiURL,index) => {
 
 //THIS ASSIGNNMENTS THE POKEMON TO EACH CORRESPONDING PLAYER. IT WILL RUN THE PUT POKEMON ON THE BATTLE FIELD FUNCTION TO PLACE.
 const assignPokemon = () => {
-    let assignment = prompt("Is this for player: 1 or 2?");
-    if(assignment == 1) {
+    // let assignment = prompt("Is this for player: 1 or 2?");
+    // console.log($('input[name="player1"]:checked').val() == "player1")
+    if($('input[name="choice"]:checked').val() == "player1") {
         player1Pokemon = pendingPokemon
         pendingPokemon = {};
         playerready ++;
-      putPokemonOnBattlefield(assignment);
+      putPokemonOnBattlefield(1);
        
     }
-    else if (assignment == 2) {
+    else if ($('input[name="choice"]:checked').val() == "player2") {
         player2Pokemon = pendingPokemon
         playerready++
-      putPokemonOnBattlefield(assignment);
+      putPokemonOnBattlefield(2);
 
     }
     else {
@@ -100,6 +102,7 @@ const putPokemonOnBattlefield = (player) => {
         $("#pokemonImage img").toggle({ effect: "scale", direction: "horizontal" })
         $("dl").toggle({ effect: "scale", direction: "horizontal" })
         $("#confirm").toggle({ effect: "scale", direction: "horizontal" })
+        $('#playerchoices').toggle({ effect: "scale", direction: "horizontal" })
         $(`#player1 > info > h2`).text(player1Pokemon.name)
         $("#player1 #pokeImage").html(`<img src=${player1Pokemon.sprite}>`)
         $(`#player1 > info > progress`).attr({"value":player1Pokemon.health, "max":player1Pokemon.health, "id":"player1health"})
@@ -116,6 +119,7 @@ const putPokemonOnBattlefield = (player) => {
         $("#pokemonImage img").toggle({ effect: "scale", direction: "horizontal" })
         $("dl").toggle({ effect: "scale", direction: "horizontal" })
         $("#confirm").toggle({ effect: "scale", direction: "horizontal" })
+        $('#playerchoices').toggle({ effect: "scale", direction: "horizontal" })
         $(`#player2 > info > h2`).text(player2Pokemon.name)
         $("#player2 #pokeImage").html(`<img src=${player2Pokemon.sprite}>`)
         $(`#player2 > info > progress`).attr({"value":player2Pokemon.health, "max":player2Pokemon.health, "id":"player2health"})

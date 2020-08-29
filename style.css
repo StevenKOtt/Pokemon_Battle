@@ -148,10 +148,14 @@ ul {
     transition: color .5s;
     cursor: pointer;
 }
-progress::-webkit-progress-value {
-   transition : width 5s ease;
-   transition-delay: 1s;
-}
+
+
+
+#playerchoices {
+    display: none;
+    }
+
+/* progress::-webkit-progress-value { background: green; } */
 
 #informationBar {
     text-align: center;
