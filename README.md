@@ -7,15 +7,19 @@
 
 Choose your pokemon choice on the left hand side. Once ready to start, player 1 will go first. Last pokemon standing wins.
 # Steps of Approach
--first made the battle field and then the Pokedex.
--Spent time on hoping data from player 1 then player 2.
+first made the battle field and then the Pokedex.
+Spent time on playing data from pending player to player 1 then player 2.
+spent a lot of time on the CSS...accidentally made it all pixels
+Moved onto pulling more info from API call with move information.
+
 
 ### Current Problems 
-*Didn't put percentages like a bobo.
-*We want pokemon cries
-*Can't filter out based off no power as it froze.
+* Didn't put percentages like a bobo.
+* We want pokemon cries
+* Can't filter out based off no power as it froze.
 
 ### Add-ons later
-*More than 1 pokemon fight at a time.
-*filtering based on power > 0 and adding more complex.
-*Better code documentation
+* More than 1 pokemon fight at a time.
+* filtering based on power > 0 and adding more complex.
+* Better code documentation of how it works. 
+* Move details.
