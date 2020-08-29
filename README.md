@@ -10,7 +10,7 @@ Choose your pokemon choice on the left hand side. Once ready to start, player 1 
 first made the battle field and then the Pokedex.
 Spent time on playing data from pending player to player 1 then player 2.
 spent a lot of time on the CSS...accidentally made it all pixels
-Moved onto pulling more info from API call with move information.
+Moved onto pulling more info from API call with move information. I really wanted to make the experience of a real Pokemon Battle, but then realized how complex these are. How much each detail goes into all of this. 
 
 
 ### Current Problems 

@@ -8,7 +8,7 @@ body {
     background-size: 300px 1040px;
     background-color: white;
     background-position-y: -40px;
-    height: 945px;
+    height: 950px;
     width: 250px;
     padding-top: 10px;
     float: left;
@@ -35,9 +35,19 @@ body {
     height: 610px; 
 
 }
+#battleField h2 {
+    color: white;
+    text-shadow: 2px 2px black;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 35px;
+}
 
 dl {
     display: none;
+}
+
+dt {
+    font-weight: bold;
 }
 #confirm {
     display: none;
@@ -146,4 +156,8 @@ progress::-webkit-progress-value {
 #informationBar {
     text-align: center;
     padding-top: 20px;
+    font-size: 25px;
+    color: red;
+    text-shadow: 2px 2px black;
+    font-family: 'Press Start 2P', cursive;
 }

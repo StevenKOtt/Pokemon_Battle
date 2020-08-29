@@ -132,6 +132,7 @@ const putPokemonOnBattlefield = (player) => {
     if (playerready == 2) {
         $("#informationBar").text("Player 1 it is your turn!")
         $("#player1Attacks").fadeIn();
+        $("#info").fadeOut();
     }
 }
 
@@ -212,7 +213,8 @@ const resetGame = () => {
     setTimeout ( function(){ 
         $("#informationBar").text("Keep going! Choose two new pokemon!")
         $("#player2").fadeOut("slow")
-        $("#player1").fadeOut("slow")}
+        $("#player1").fadeOut("slow")
+        $("#info").fadeIn()}
         
         , 4000);
     
